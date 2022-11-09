@@ -1,0 +1,211 @@
+.w-80 {
+  width: 80%;
+  margin: auto;
+}
+
+.bg-black {
+  background-color: black;
+}
+.bg-grey {
+  background-color: rgb(43, 41, 41);
+}
+/*BORDER BOTTOM TITLE START*/
+h3 {
+  position: relative;
+}
+h3::after {
+  position: absolute;
+  content: "";
+  border: #CBAC6C solid;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 20%;
+  height: 5px;
+  margin: auto;
+}
+/*BORDER BOTTOM TITLE END*/
+/*NAVBAR START*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link:hover {
+  background-color: #CBAC6C;
+  background-size: 30px;
+  color: rgb(255, 255, 255) !important;
+}
+.nav-active {
+  background-color: rgb(43, 41, 41);
+  box-shadow: 5px -1px 12px -5px grey;
+  opacity: 0.95;
+  transition: 0.s ease-in-out;
+}
+.burger {
+  display: none;
+}
+/*NAVBAR END*/
+/*SLIDER START*/
+.rond-slide {
+  border-radius: 50% !important;
+  height: 15px !important;
+  width: 15px !important;
+}
+/*SLIDER END*/
+/*SECTION TEXT START*/
+#hr::before,
+#hr::after {
+  border: 2px solid #DAA520;
+  content: "";
+  flex: 1;
+}
+/*SECTION TEXT END*/
+/*SECTION ACTIVITE START*/
+.bg-img-1,
+.bg-img-2,
+.bg-img-3,
+.bg-img-4 {
+  height: 350px;
+}
+.bg-img-1 {background-image: url(../images/activites/bg_activite_1.jpg);}
+.bg-img-2 {background-image: url(../images/activites/bg_activite_2.jpg);}
+.bg-img-3 {background-image: url(../images/activites/bg_activite_3.jpg);}
+.bg-img-4 {background-image: url(../images/activites/bg_activite_4.jpg);}
+.border-bottom-link:hover {color: white !important;}
+.border-bottom-link {position: relative;}
+.border-bottom-link::after {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  content: '';
+  height: 2px;
+  bottom: -10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 25%;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.border-bottom-link:hover:after {
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+/*SECTION ACTIVITE END*/
+/*SECTION ACTU START*/
+.card {border: none !important;}
+/*SECTION ACTU END*/
+
+.img_width{
+  width: 296px !important; 
+}
+
+.suite-t {position: relative;}
+.suite-t:after {
+  position: absolute;
+  background: black;
+  content: '';
+  height: 2px;
+  bottom: -10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 25%;
+
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.suite-t:hover:after {
+  width: 100%;
+  background: black;
+}
+/*FOOTER START*/
+a:hover {color: #CBAC6C !important;}
+/*FOOTER END*/
+
+
+@media only screen and (max-width: 768px) {
+  .btn {width: 100% !important;}
+  .content-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partenaire {max-width: 100%;}
+  .remove {display: none;}
+  .logo-partenaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  /*BURGER START*/
+  .menu {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 90px);
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background: rgba(34, 34, 34, 0.699);
+    transform: translateX(110%);
+    transition: all .5s ease-in-out;
+  }
+  .menu .nav-item {padding-left: 15px;}
+  .show-nav .menu {
+    width: 100vw;
+    transform: translateX(0);
+  }
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    transition: all .5s ease-in-out;
+  }
+  .bar::before,.bar::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+  }
+  .bar::before {transform: translateY(-12px)}
+  .bar::after {transform: translateY(12px)}
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+  }
+  .show-nav .bar::before {transform: rotate(45deg);}
+  .show-nav .bar::after {transform: rotate(-45deg);}
+  /* Bonus - Animations start */
+  .show-nav .first {transition: all 1s ease-out;}
+  .show-nav .second {transition: all 1.1s ease-out;}
+  .show-nav .third {transition: all 1.2s ease-out;}
+  .show-nav .four {transition: all 1.3s ease-out;}
+  .show-nav .fifth {transition: all 1.4s ease-out;}
+  /*Bonus - Animations end*/
+  /*BURGER END*/
+}
+/*PAGE ACTIVITE START*/
+
+/*PAGE ACTIVITE END*/
