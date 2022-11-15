@@ -1,6 +1,6 @@
 <?php
 $id = $_GET["id"];
-$a= new PDO('mysql:host=localhost;dbname=pdo;charset=utf8','alan','');
+$a= new PDO('mysql:host=localhost;dbname=pdo;charset=utf8','root','');
 $a->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $b=$a->prepare("SELECT * FROM contact WHERE id=$id");
 $b->execute();
