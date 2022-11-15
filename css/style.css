@@ -26,10 +26,17 @@ h3::after {
 }
 /*BORDER BOTTOM TITLE END*/
 /*NAVBAR START*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
+#pad{
+  padding-top: 0px;
+  padding-right: 20px;
 }
+
+#reseaux{
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 10px;
+  }
+
 .nav-link:hover {
   background-color: #CBAC6C;
   background-size: 30px;
@@ -38,11 +45,15 @@ h3::after {
 .nav-active {
   background-color: rgb(43, 41, 41);
   box-shadow: 5px -1px 12px -5px grey;
-  opacity: 0.95;
+  opacity: 0.80;
   transition: 0.s ease-in-out;
 }
+
 .burger {
   display: none;
+}
+.btn-href{
+  text-decoration: none;
 }
 /*NAVBAR END*/
 /*SLIDER START*/
@@ -143,6 +154,10 @@ a:hover {color: #CBAC6C !important;}
     margin-left: 50px;
   }
   /*BURGER START*/
+  .resp-link{margin-left: 26px;}
+
+  #pad{margin-left: 13px;}
+
   .menu {
     overflow: hidden;
     display: flex;
@@ -205,7 +220,11 @@ a:hover {color: #CBAC6C !important;}
   .show-nav .fifth {transition: all 1.4s ease-out;}
   /*Bonus - Animations end*/
   /*BURGER END*/
-}
-/*PAGE ACTIVITE START*/
+  .img_fluid{display: none;}
 
-/*PAGE ACTIVITE END*/
+  .text-90{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+}

@@ -41,6 +41,18 @@ h3::after{
     height: 400px;
     width: 100%;
   }
+
+  #pad{
+    padding-top: 0px;
+    padding-right: 20px;
+  }
+
+  #reseaux{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
+    }
+
   .nav-link:hover{
   background-color: #CBAC6C;
   background-size: 30px;
@@ -94,15 +106,21 @@ h3::after{
 
 /*MEDIA QUERRY START*/
 @media only screen and (max-width: 768px) {
-  .btn{width: 100% !important;}
-  .content-footer{
-    display: flex;
-    flex-wrap:wrap;
-  }
+  .btn{
+    width: 40% !important;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
   .responsive-d-block{display: block !important;}
+
   .carousel-hauteur{max-height: 200px;}
-  .btn{margin-top: 5px;}
+
   /*BURGER START*/
+  .resp-link{margin-left: 26px;}
+
+  #pad{margin-left: 13px;}
+
   .menu { 
     overflow:hidden;
     display:flex;
@@ -166,20 +184,46 @@ h3::after{
     transition: all .5s ease-in-out;
   }
   .bar::before {transform:translateY(-12px)}
+
   .bar::after {transform:translateY(12px)}
+  
   .show-nav .bar {
     width:0;
     background:transparent;    
   }
   .show-nav .bar::before {transform:rotate(45deg);}
+
   .show-nav .bar::after {transform:rotate(-45deg);}
   /* Bonus - Animations */
   .show-nav .first {transition: all 1s ease-out;} 
+
   .show-nav .second {transition: all 1.1s ease-out;} 
+
   .show-nav .third {transition: all 1.2s ease-out;} 
+
   .show-nav .four {transition: all 1.3s ease-out;} 
+
   .show-nav .fifth {transition: all 1.4s ease-out;
   }
   /*BURGER END*/
+  /* Activité Title Star */
+  .text-90{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .title-atelier{margin-top: 100px;}
+
+  .title-atelier-bis{display: none;}
+  /* Activité  Title End */
+  
+  /* Footer start */
+  .img_fluid{display: none;}
+
+  .content-footer{
+    display: flex;
+    flex-wrap:wrap;
+  }
+  /* Footer End */
 }
 /*MEDIA QUERRY END*/

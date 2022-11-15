@@ -1,7 +1,5 @@
 <?php include_once "elements/header-old.php";?>
 <?php
-ob_start();
-session_start();
 ?>
     <section class="container">
         <div class="row">

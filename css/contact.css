@@ -12,7 +12,7 @@ h3::after {
   position: absolute;
   content: "";
   border: #CBAC6C solid;
-  left: 0;
+  left: 90px;
   bottom: -20px;
   width: 20%;
   height: 5px;
@@ -30,6 +30,15 @@ header {
   height: 400px;
   width: 100%;
 }
+
+#pad{padding-top: 0px;
+padding-right: 20px;}
+#reseaux{padding-top: 0px;
+padding-right: 0px;
+padding-left: 10px;
+}
+/* .nav-link{padding-top: 0px;} */
+
 .nav-link:hover {
   background-color: #CBAC6C;
   background-size: 30px;
@@ -44,7 +53,7 @@ header {
 .nav-active {
   background-color: rgb(43, 41, 41);
   box-shadow: 5px -1px 12px -5px grey;
-  opacity: 0.95;
+  opacity: 0.8025;
   transition: 0.s ease-in-out;
 }
 .burger {display: none;}
@@ -56,21 +65,20 @@ span{
   display: none;
   color: red;
 }
-.control-danger{
-  border: solid 1PX red !important;
+ .control-danger{
+  border: solid 2px red !important ;
 }
 .control-success{
-  border: solid 1px greenyellow !important;
-}
+  border: solid 2px greenyellow !important;
+} 
 
-.title-coordonnee {position: relative;}
 .title-coordonnee::after {
   position: absolute;
   content: "";
   border: #CBAC6C solid;
-  left: 40px;
+  left: 110px;
   bottom: -20px;
-  width: 20%;
+  width: 35%;
   height: 5px;
   margin: auto;
 }
@@ -98,12 +106,26 @@ a:hover {color: #CBAC6C !important;}
     max-width: 100% !important;
     margin-left: 60px;
   }
+  .title-coordonnee::after{
+    position: absolute;
+    content: "";
+    border: #CBAC6C solid;
+    left: 50px;
+    bottom: -20px;
+    width: 50%;
+    height: 5px;
+    margin: auto;
+  }
   .btn {width: 100% !important;}
   .content-footer {
     display: flex;
     flex-wrap: wrap;
   }
   /*BURGER START*/
+  .resp-link{margin-left: 26px;}
+
+  #pad{margin-left: 13px;}
+
   .menu {
     overflow: hidden;
     display: flex;
@@ -182,4 +204,6 @@ a:hover {color: #CBAC6C !important;}
   .show-nav .four {transition: all 1.3s ease-out;}
   .show-nav .fifth {transition: all 1.4s ease-out;}
   /*BURGER END*/
+  .img_fluid{display: none;}
+  h3{text-align: center;}
 }
