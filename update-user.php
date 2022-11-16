@@ -15,7 +15,7 @@ $sujet = $_POST['sujet'];
 $message = $_POST['message'];
 
 
-$sth = $dbco->prepare("UPDATE contact SET nom = '$nom', prenom = '$prenom', email = '$email', tel = '$tel', sujet = '$sujet', message = '$message'  WHERE id= $id"); 
+$sth = $dbco->prepare("UPDATE contact SET nom = :nom, prenom = :prenom, email = :email, tel = :tel, sujet = :sujet, message = :message WHERE id = '$id'"); 
 
 $sth->execute([
     ':nom' => $nom,

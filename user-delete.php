@@ -7,8 +7,7 @@ try{
     $id = $_GET['id'];
     $sth = $dbco->prepare("DELETE FROM contact WHERE id= $id");
     $sth->execute(); 
-    // $results = $sth->fetchAll(PDO::FETCH_ASSOC);
-    echo "SUPRESSION REUSSI ZDEDEDEDEX!!";
+    header("location:users.php");
 }    
 catch(PDOException $e){
     echo "Erreur ça marche pas du tout!!! : " . $e->getMessage();
