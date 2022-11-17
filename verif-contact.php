@@ -33,8 +33,8 @@ var_dump($b); -->
                
               
                 //$sth appartient à la classe PDOStatement
-                $sth = $dbco->prepare("
-                    INSERT INTO contact(nom, prenom, email, tel, sujet, message) VALUES (:nom, :prenom, :email, :tel, :sujet, :message)");
+                $sth = $dbco->prepare("INSERT INTO contact(nom, prenom, email, tel, sujet, message) VALUES (:nom, :prenom, :email, :tel, :sujet, :message)");
+                
                 $sth->execute([':nom' => $nom,
                                 ':prenom' => $prenom,
                                 ':email' => $email,
